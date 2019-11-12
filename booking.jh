@@ -1,0 +1,44 @@
+
+
+
+entity Ride{
+distance Long,
+pickupAddress String,
+pickupPlaceId String,
+destinationPlaceId String,
+destinationAddress String,
+pickupGeopoint String,
+destinationGeopoint String,
+customerId Long,
+requestedStatus RequestStatus,
+acceptedStatus FreightStatus,
+driverId Long,
+cost Double,
+createdTime Instant,
+trackingId String
+}
+
+entity Invoice{
+distance Long,
+pickupAddress String,
+destinationAddress String,
+cost Long 
+}
+
+relationship OneToOne {
+
+    Ride{invoice} to Invoice
+}
+
+
+
+paginate * with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl 
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

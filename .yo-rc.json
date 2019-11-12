@@ -1,0 +1,34 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.illudtechzone.booking"
+    },
+    "jhipsterVersion": "5.8.2",
+    "applicationType": "microservice",
+    "baseName": "booking",
+    "packageName": "com.illudtechzone.booking",
+    "packageFolder": "com/illudtechzone/booking",
+    "serverPort": "8091",
+    "authenticationType": "oauth2",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MDhmNmJlNzI2ZjA4N2VmYmQ2YThlYWI4OTY0YTI3NDdiNjI5M2E2NTdmZjdkMmIzMGE1NDc5MTQ4Njc4MjMzOTA1NDgxYjQwYjcwODY5MzhhNWFjODVhMDlmYTQ2NzQyZWFkMzgwY2Q4YmQzOGI1ZDNmMWY2ZTc0OWMzMjkwMWY=",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
