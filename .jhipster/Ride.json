@@ -1,0 +1,83 @@
+{
+    "name": "Ride",
+    "fields": [
+        {
+            "fieldName": "distance",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "pickupAddress",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pickupPlaceId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "destinationPlaceId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "destinationAddress",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pickupGeopoint",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "destinationGeopoint",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "customerId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "requestedStatus",
+            "fieldType": "RequestStatus",
+            "fieldValues": "REQUEST,CONFIRM,REJECT"
+        },
+        {
+            "fieldName": "acceptedStatus",
+            "fieldType": "RideStatus",
+            "fieldValues": "START,COMPLETE,NOT_STARTED"
+        },
+        {
+            "fieldName": "driverId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "cost",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "createdTime",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "trackingId",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "invoice",
+            "otherEntityRelationshipName": "ride",
+            "relationshipName": "invoice",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20191112082211",
+    "entityTableName": "ride",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "booking",
+    "applications": "*",
+    "microserviceName": "booking"
+}

@@ -11,7 +11,7 @@ pickupGeopoint String,
 destinationGeopoint String,
 customerId Long,
 requestedStatus RequestStatus,
-acceptedStatus FreightStatus,
+acceptedStatus RideStatus,
 driverId Long,
 cost Double,
 createdTime Instant,
@@ -25,6 +25,21 @@ destinationAddress String,
 cost Long 
 }
 
+enum RideStatus
+{
+START,
+COMPLETE,
+NOT_STARTED
+}
+
+enum RequestStatus
+{
+REQUEST,
+CONFIRM,
+REJECT
+}
+
+
 relationship OneToOne {
 
     Ride{invoice} to Invoice
@@ -32,13 +47,6 @@ relationship OneToOne {
 
 
 
-paginate * with pagination
-
-// Use Data Transfert Objects (DTO)
-// dto * with mapstruct
-
-// Set service options to all except few
-service all with serviceImpl 
-
-// Set an angular suffix
-// angularSuffix * with mySuffix
+service all with serviceImpl
+dto all with mapstruct
+paginate all with pagination

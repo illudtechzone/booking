@@ -1,0 +1,32 @@
+{
+    "name": "Invoice",
+    "fields": [
+        {
+            "fieldName": "distance",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "pickupAddress",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "destinationAddress",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cost",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20191112082212",
+    "entityTableName": "invoice",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "booking",
+    "applications": "*",
+    "microserviceName": "booking"
+}
